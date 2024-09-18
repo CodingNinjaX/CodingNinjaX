@@ -1,0 +1,69 @@
+/* Global Styles */
+body {
+    font-family: 'Playfair Display', serif; /* Elegant font for a classic look */
+    background: linear-gradient(to bottom right, #f5d76e, #e67e22); /* Gold gradient background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Gallery Container */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* Photo Containers */
+.photo-container {
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect on Photos */
+.photo-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styles */
+.photo-container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* Hover effect for images and links */
+.photo-container img:hover {
+    transform: scale(1.08);
+}
+
+.photo-container a {
+    text-decoration: none;
+}
+
+/* Caption Styles */
+.photo-container p {
+    margin-top: 15px;
+    color: #555;
+    font-size: 18px;
+    font-style: italic;
+}
