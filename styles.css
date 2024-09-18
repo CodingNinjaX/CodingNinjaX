@@ -1,85 +1,98 @@
 /* Global Styles */
 body {
-    font-family: 'Playfair Display', serif; /* Elegant font for a classic look */
-    background: linear-gradient(to bottom right, #f5d76e, #e67e22); /* Gold gradient background */
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to bottom right, #f5d76e, #e67e22);
     margin: 0;
     padding: 0;
     color: #333;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Heading */
-h1 {
+/* Hero Section */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-top: 20px; /* Reduced margin */
     color: #fff;
-    font-size: 32px; /* Adjusted font size */
-    font-weight: bold;
-    letter-spacing: 2px; /* Reduced letter spacing */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 0 20px;
 }
 
-/* Gallery Container */
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d35400;
+}
+
+/* Gallery Section */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px; /* Reduced margin */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
 }
 
 /* Photo Containers */
 .photo-container {
-    margin: 10px; /* Reduced margin */
-    text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 15px; /* Reduced padding */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Reduced shadow */
-    border-radius: 8px; /* Reduced border radius */
+    padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
 }
 
-/* Hover Effect on Photos */
 .photo-container:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Image Styles */
 .photo-container img {
-    width: 250px; /* Adjusted width */
-    height: 150px; /* Adjusted height */
-    border-radius: 8px; /* Reduced border radius */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
     transition: transform 0.3s;
 }
 
-/* Hover effect for images and links */
 .photo-container img:hover {
     transform: scale(1.08);
 }
 
-.photo-container a {
-    text-decoration: none;
-}
-
-/* Caption Styles */
 .photo-container p {
-    margin-top: 10px; /* Reduced margin */
+    margin-top: 10px;
     color: #555;
-    font-size: 16px; /* Adjusted font size */
+    font-size: 16px;
     font-style: italic;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px; /* Adjust padding */
-    background-color: rgba(0, 0, 0, 0.1); /* Light background for footer */
-    position: fixed;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
     width: 100%;
-    bottom: 0; /* Stick to the bottom */
-}
-
-footer p {
-    font-size: 18px; /* Match font size */
+    bottom: 0;
+    font-size: 18px;
     color: #333;
 }
